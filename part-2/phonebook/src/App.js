@@ -80,7 +80,7 @@ const App = () => {
                   <li key={person.name}>
                       {person.name} {person.number} <button type="button" onClick={
                         () => {
-                          axios.delete(`http://localhost:3001/persons/${person.id}`)
+                          axios.delete(`http://localhost:3001/api/persons/${person.id}`)
                           .then(setPersons(persons.filter(
                             p => p.id !== person.id
                           ))) 
